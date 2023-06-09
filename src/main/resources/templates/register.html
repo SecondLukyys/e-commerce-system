@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>e-commerce</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .nav-item {
+      margin-left: 10px;
+    }
+
+    .nav-item:first-child {
+      margin-left: 0;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      margin-left: 284px;
+    }
+
+    p {
+      margin-left: 640px;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: first;
+    }
+
+    .larger-form {
+      width: 400px;
+      padding: 20px;
+    }
+
+    .form-group.row.justify-content-center {
+      justify-content: center;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .btn-margin {
+      margin-right: -50px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="/">El. komercija</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/productscatalogue">Produktų katalogas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/cart">Produktų krepšelis</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/login">Vartotojo prisijungimas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/register">Vartotojo registracija</a>
+    </li>
+  </ul>
+</nav>
+
+
+<br><br><br>
+
+<header>
+  <h1 style="text-align: center">Registracija</h1>
+</header>
+
+<br>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form class="btn btn-outline-dark larger-form" th:action="@{/registerbutton}" method="post">
+
+        <div class="form-group row">
+          <label for="username" class="col-sm-6 col-form-label text-right">Vardas:</label>
+          <div class="col-sm-6">
+            <input type="text" id="username" name="username" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="password" class="col-sm-6 col-form-label text-right">Slaptažodis:</label>
+          <div class="col-sm-6">
+            <input type="password" id="password" name="password" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="mail" class="col-sm-6 col-form-label text-right">El. paštas:</label>
+          <div class="col-sm-6">
+            <input type="text" id="mail" name="mail" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="age" class="col-sm-6 col-form-label text-right">Gimimo metai:</label>
+          <div class="col-sm-6">
+            <input class="btn btn-primary" type="number" id="age" name="age" min="1925" max="2023" value="1999">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="sex" class="col-sm-6 col-form-label text-right">Lytis:</label>
+          <div class="col-sm-6">
+            <select class="btn btn-primary" id="sex" name="sex">
+              <option value="male">Vyras</option>
+              <option value="female">Moteris</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="city" class="col-sm-6 col-form-label text-right">Miestas:</label>
+          <div class="col-sm-6">
+            <select class="btn btn-primary" id="city" name="city">
+              <option value="Vilnius">Vilnius</option>
+              <option value="Vilniaus apskritis">Vilniaus apskritis</option>
+              <option value="Kaunas">Kaunas</option>
+              <option value="Kauno apskritis">Kauno apskritis</option>
+              <option value="Klaipėda">Klaipėda</option>
+              <option value="Klaipėdos apskritis">Klaipėdos apskritis</option>
+              <option value="Panėvėžys">Panėvėžys</option>
+              <option value="Panėvėžio apskritis">Panėvėžio apskritis</option>
+              <option value="Šiauliai">Šiauliai</option>
+              <option value="Šiaulių apskritis">Šiaulių apskritis</option>
+              <option value="Alytus">Alytus</option>
+              <option value="Alytaus apskritis">Alytaus apskritis</option>
+              <option value="Marijampolė">Marijampolė</option>
+              <option value="Marijampolės apskritis">Marijampolės apskritis</option>
+              <option value="Palanga">Palanga</option>
+              <option value="Palangos apskritis">Palangos apskritis</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row justify-content-end">
+          <div class="col-sm-6 text-right">
+            <input class="btn btn-secondary btn-margin" type="submit" value="Prisiregistruoti">
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+  <p>Neturite paskyros? <a href="/register">Registracija</a></p>
+
+  <div class="content"></div>
+
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+    <span class="text-muted"> /\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\. Autorių teisės &copy; 2023
+      <a href="https://luuuuukas.github.io/">Lukas Lukoševičius</a>
+      Visos teisės saugomos. ./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\ </span>
+    </div>
+  </footer>
+
+</body>
+
+</html>
