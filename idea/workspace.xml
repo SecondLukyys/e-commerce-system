@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="643ce815-a60b-4a0b-827f-cfb63fe6d703" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ONVuUJHBbhjfvu4F0vXZ2kWzpW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/luluk/Desktop/universiteto/Programavimo/Best One So far MVC works/E-Commerce system (Demo 52)/src/main/resources/templates",
+    "list.type.of.created.stylesheet": "CSS",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.18554688",
+    "project.structure.side.proportion": "0.48979592",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "4bf3a81d2f62c6457a38bf091f300a34"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.demo.Controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\luluk\Desktop\universiteto\Programavimo\Best One So far MVC works\E-Commerce system (Demo 52)\src\main\resources\templates" />
+      <recent name="C:\Users\luluk\Desktop\universiteto\Programavimo\Best One So far MVC works\demo22\src\main\resources\templates" />
+      <recent name="C:\Users\luluk\Desktop\universiteto\Programavimo\Best One So far MVC works\demo11\src\main\resources\templates" />
+      <recent name="C:\Users\luluk\Desktop\universiteto\Programavimo\Best One So far MVC works\demo10\src\main\resources\templates" />
+      <recent name="C:\Users\luluk\Desktop\universiteto\Programavimo\Best One So far MVC works\demo3\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\luluk\Desktop\universiteto\Programavimo\demo2\src\main\resources\templates" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="app.webserver.ecommerce" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Server">
+    <configuration name="Demo2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="E-Commerce System" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="system.Server.Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="E-Commerce System" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="system.Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="e3bf8652-d3c2-4952-abba-1515a289dc72" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52994" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53004" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.Server" />
+      <item itemvalue="Spring Boot.Demo2Application" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="643ce815-a60b-4a0b-827f-cfb63fe6d703" name="Changes" comment="" />
+      <created>1681401252795</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681401252795</updated>
+      <workItem from="1681401254094" duration="992000" />
+      <workItem from="1681474414440" duration="14274000" />
+      <workItem from="1681539046746" duration="8000" />
+      <workItem from="1681650181059" duration="1970000" />
+      <workItem from="1681652597315" duration="6438000" />
+      <workItem from="1681659136446" duration="306000" />
+      <workItem from="1681659681801" duration="1770000" />
+      <workItem from="1681738665426" duration="703000" />
+      <workItem from="1681739404483" duration="1725000" />
+      <workItem from="1681741157130" duration="1460000" />
+      <workItem from="1681742658821" duration="121000" />
+      <workItem from="1681743758678" duration="1599000" />
+      <workItem from="1681745884957" duration="2163000" />
+      <workItem from="1681748601369" duration="7924000" />
+      <workItem from="1681760177730" duration="4935000" />
+      <workItem from="1681765645985" duration="724000" />
+      <workItem from="1681766399382" duration="5097000" />
+      <workItem from="1681771531919" duration="926000" />
+      <workItem from="1681772483953" duration="1236000" />
+      <workItem from="1681773728254" duration="1137000" />
+      <workItem from="1681914986090" duration="3000" />
+      <workItem from="1681915711425" duration="17483000" />
+      <workItem from="1681936348720" duration="151000" />
+      <workItem from="1681937132457" duration="176000" />
+      <workItem from="1681974103231" duration="9900000" />
+      <workItem from="1681984047156" duration="17072000" />
+      <workItem from="1682015957643" duration="11700000" />
+      <workItem from="1682060804119" duration="12552000" />
+      <workItem from="1682073458130" duration="23466000" />
+      <workItem from="1682102165304" duration="15298000" />
+      <workItem from="1682153757613" duration="937000" />
+      <workItem from="1682154824193" duration="893000" />
+      <workItem from="1682155801449" duration="5268000" />
+      <workItem from="1682161146789" duration="16335000" />
+      <workItem from="1682179249523" duration="16161000" />
+      <workItem from="1682237605110" duration="18547000" />
+      <workItem from="1682259285068" duration="2176000" />
+      <workItem from="1682261527403" duration="4380000" />
+      <workItem from="1682265957441" duration="4641000" />
+      <workItem from="1682276446774" duration="18000" />
+      <workItem from="1682321496588" duration="2183000" />
+      <workItem from="1682323742469" duration="2780000" />
+      <workItem from="1682328745639" duration="18000" />
+      <workItem from="1682331243379" duration="92000" />
+      <workItem from="1682331377943" duration="3231000" />
+      <workItem from="1682334694372" duration="2067000" />
+      <workItem from="1682338735448" duration="3996000" />
+      <workItem from="1682344829474" duration="2970000" />
+      <workItem from="1682347831010" duration="33000" />
+      <workItem from="1682347899925" duration="1064000" />
+      <workItem from="1682350431754" duration="1496000" />
+      <workItem from="1682358752919" duration="49000" />
+      <workItem from="1682358837362" duration="2291000" />
+      <workItem from="1682361175626" duration="759000" />
+      <workItem from="1682361974789" duration="437000" />
+      <workItem from="1682362455471" duration="995000" />
+      <workItem from="1682363490906" duration="507000" />
+      <workItem from="1682411299719" duration="1198000" />
+      <workItem from="1682412544077" duration="4597000" />
+      <workItem from="1682417209867" duration="57000" />
+      <workItem from="1682419701604" duration="117000" />
+      <workItem from="1682419889129" duration="676000" />
+      <workItem from="1682421014536" duration="958000" />
+      <workItem from="1682432731396" duration="14189000" />
+      <workItem from="1682457201937" duration="1940000" />
+      <workItem from="1682495882472" duration="5552000" />
+      <workItem from="1682513460422" duration="723000" />
+      <workItem from="1682514327734" duration="401000" />
+      <workItem from="1682515260303" duration="368000" />
+      <workItem from="1682515659297" duration="2032000" />
+      <workItem from="1682518120887" duration="7481000" />
+      <workItem from="1682526457595" duration="35000" />
+      <workItem from="1682526523114" duration="2830000" />
+      <workItem from="1682579749686" duration="7011000" />
+      <workItem from="1682589155856" duration="1890000" />
+      <workItem from="1682591097054" duration="16978000" />
+      <workItem from="1682610084461" duration="11754000" />
+      <workItem from="1682662511841" duration="674000" />
+      <workItem from="1682663230565" duration="6723000" />
+      <workItem from="1682671148039" duration="9790000" />
+      <workItem from="1682681739663" duration="1316000" />
+      <workItem from="1682686541323" duration="4686000" />
+      <workItem from="1682691268194" duration="1638000" />
+      <workItem from="1682692949799" duration="4064000" />
+      <workItem from="1682697282609" duration="2298000" />
+      <workItem from="1682750706258" duration="1922000" />
+      <workItem from="1682773283635" duration="4198000" />
+      <workItem from="1682840190414" duration="29000" />
+      <workItem from="1682840915104" duration="1102000" />
+      <workItem from="1682842267459" duration="889000" />
+      <workItem from="1682850713090" duration="26000" />
+      <workItem from="1682851216339" duration="6871000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.neo4j.driver.exceptions.value.LossyCoercion" package="org.neo4j.driver.exceptions.value" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
