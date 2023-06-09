@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>e-commerce</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <style>
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      margin-left: 600px;
+    }
+
+    p{
+      margin-left: 640px;
+    }
+
+
+  </style>
+
+</head>
+
+<body style="height:1500px">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="/">El. komercija</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/productscatalogue">Produktų katalogas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/cart">Produktų krepšelis</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/login">Vartotojo prisijungimas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/register">Vartotojo registracija</a>
+    </li>
+  </ul>
+</nav>
+
+<br><br><br>
+<br>
+
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar-nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .nav-item {
+        margin-left: 10px;
+      }
+
+      .nav-item:first-child {
+        margin-left: 0;
+      }
+
+
+      form {
+        width: 300px;
+        margin: 0 auto;
+        margin-left: 600px;
+      }
+
+      p{
+        margin-left: 640px;
+      }
+
+      .form-group {
+        display: flex;
+        align-items: first;
+      }
+
+      .larger-form {
+        width: 400px;
+        padding: 20px;
+        /* Additional CSS styles as needed */
+      }
+      h1.new{
+        font-size: large;
+        text-align: center;
+        color: crimson;
+      }
+
+    </style>
+
+  </head>
+
+  <body style="height:1500px">
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="/">El. komercija</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/productscatalogue">Produktų katalogas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/cart">Produktų krepšelis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/login">Vartotojo prisijungimas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/register">Vartotojo registracija</a>
+      </li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1 style="text-align: center">Registracija</h1>
+  </header>
+
+  <br>
+
+  <h1 class="new">Įvestas jau naudojamas prisijungimo vardas, bandykite dar kartą</h1>
+  <br>
+
+  <form class="btn btn-outline-dark larger-form" th:action="@{/registerbutton}" method="post" >
+    <div class="form-group">
+      <label for="username">Vardas: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Slaptažodis: &nbsp; &nbsp;</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Amžius: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+      <input type="number" id="age" name="age" min="1" max="200" value="25">
+    </div>
+
+    <div class="form-group">
+      <label for="sex">Lytis: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+      <select id="sex" name="sex">
+        <option value="male">Vyras</option>
+        <option value="female">Moteris</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="city">Miestas:&nbsp; &nbsp; &nbsp; &nbsp;</label>
+      <select id="city" name="city">
+        <option value="vilius">Vilnius</option>
+        <option value="vilniausapskritis">Vilniaus apskritis</option>
+        <option value="kaunas">Kaunas</option>
+        <option value="kaunoapskritis">Kauno apskritis</option>
+        <option value="klaipėda">Klaipėda</option>
+        <option value="klaipėdosapskritis">Klaipėdos apskritis</option>
+        <option value="panėvėžys">Panėvėžys</option>
+        <option value="panėvėžioapskritis">Panėvėžio apskritis</option>
+        <option value="šiauliai">Šiauliai</option>
+        <option value="šiauliųapskritis">Šiaulių apskritis</option>
+        <option value="alytus">Alytus</option>
+        <option value="alytausapskritis">Alytaus apskritis</option>
+        <option value="marijampolė">Marijampolė</option>
+        <option value="marijampolėsapskritis">Marijampolės apskritis</option>
+        <option value="palanga">Palanga</option>
+        <option value="panagosapskritis">Palangos apskritis</option>
+      </select>
+    </div>
+
+    <input class="btn btn-secondary btn" type="submit" value="Prisiregistruoti">
+  </form>
+
+
+
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+    <span class="text-muted"> /\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\. Autorių teisės &copy; 2023
+      <a href="https://luuuuukas.github.io/">Lukas Lukoševičius</a>
+      Visos teisės saugomos. ./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\./\ </span>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+
