@@ -1,1 +1,61 @@
-mvn spring-boot:run
+------------------------------------------------------------------------
+
+To start neo4j and springboot app in vps run:
+
+nohup neo4j console &
+nohup mvn spring-boot:run > /dev/null 2>&1 &         mvn spring-boot:run  
+
+To stop neo4j and springboot app in vps run:
+
+ps aux | grep neo4j
+kill <PID>
+
+ps aux | grep spring-boot
+kill <PID>
+
+------------------------------------------------------------------------
+
+Neo4j logins:
+
+Login: neo4j
+Pass: drama-happy-decide-scale-explain-6639
+
+------------------------------------------------------------------------
+
+When not working on VPS to test Springboot app application.properties needs to be changed
+
+From:
+
+server.port=443
+server.address=0.0.0.0
+# Bind to all IP addresses
+
+server.ssl.key-store=classpath:keystore.p12
+server.ssl.key-store-password=Mybladei
+server.ssl.key-store-type=PKCS12
+server.ssl.key-alias=tomcat
+
+spring.neo4j.uri=bolt://localhost:7687
+spring.neo4j.authentication.username=neo4j
+spring.neo4j.authentication.password=drama-happy-decide-scale-explain-6639
+
+spring.security.user.name=neo4j
+spring.security.user.password=drama-happy-decide-scale-explain-6639
+
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+
+To:
+
+spring.neo4j.uri=bolt://localhost:7687
+spring.neo4j.authentication.username=neo4j
+spring.neo4j.authentication.password=drama-happy-decide-scale-explain-6639
+
+spring.security.user.name=neo4j
+spring.security.user.password=drama-happy-decide-scale-explain-6639
+
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+
+
+------------------------------------------------------------------------

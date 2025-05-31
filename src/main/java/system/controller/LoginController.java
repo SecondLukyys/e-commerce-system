@@ -1,17 +1,18 @@
 package system.controller;
 
-import jakarta.servlet.http.HttpSession;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import jakarta.servlet.http.HttpSession;
 import system.model.Product;
 import system.model.User;
 import system.model.Variables;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 public class LoginController extends UserController{
@@ -23,6 +24,39 @@ public class LoginController extends UserController{
 
     @PostMapping("/loginbutton")
     public String loginButton(@RequestParam String username, @RequestParam String password, HttpSession session, Model model) {
+
+
+        System.out.println("LOGIN function .................................");
+        System.out.println("LOGIN function .................................");
+        System.out.println("LOGIN function .................................");
+        System.out.println("LOGIN function .................................");
+
+
+        System.out.println(username);
+        System.out.println(username);
+        System.out.println(password);
+        System.out.println(password);
+        
+        User user1 = getUserRepository().findByUsernameAndPassword("T", "T");
+
+        if (user1 != null) {
+            System.out.println("User found: " + user1.getUsername());
+        } else {
+            System.out.println("Invalid username or password");
+        }
+
+        User user = getUserRepository().findByUsernameAndPassword(username, password);
+        System.out.println("User fetched: " + user);
+
+        System.out.println(user.getUsername());
+        System.out.println(user.getUsername());
+        System.out.println(user.getUsername());
+        System.out.println(user.getUsername());
+        System.out.println(user.getUsername());
+        System.out.println(user.getUsername());
+        System.out.println(user.getUsername());
+        System.out.println(user.getUsername());
+
 
         if(username == null)
             return "loginwrong";
@@ -37,12 +71,10 @@ public class LoginController extends UserController{
             return "loginwrong";
 
 
-        User user = getUserRepository().findByUsernameAndPassword(username, password);
+        
+        
 
-
-        if(user==null)
-            return "loginwrong";
-
+            
 
         if (user.getPassword().equals(password) && user.getUsername().equals(username)) {
             Variables.setUsername(username);
