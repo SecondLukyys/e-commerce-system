@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" th:href="@{/portfolio/assets/css/main.css}" />
+    <link rel="shortcut icon" th:href="@{/portfolio/images/icon.ico}" />
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro">
+            <h1>Portfolio</h1>
+            <p>A showcase of projects and abilities.</p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <a href="/" class="logo">Portfolio</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="/">My portfolio</a></li>
+            </ul>
+            <ul class="links">
+                <li class="active"><a href="/productscatalogue">E-commerce-site</a></li>
+            </ul>
+            <ul class="links">
+                <li class="active"><a href="/">Placeholder</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/lukas-luko%C5%A1evi%C4%8Dius/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/SecondLukyys/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2><a href="#">My name is Lukas Lukoševičius</a></h2>
+                    <p>I'm a passionate developer but more importantly I'm passionate about technology. Just graduated from Vilnius Gediminas Technical University. Experienced in developing apps and programs with various tools and programming languages.</p>
+                </header>
+                <br>
+                <h2><a href="/projectecommerce">Bachelor's thesis project</a></h2>
+                <a href="/projectecommerce" class="image main"><img th:src="@{/portfolio/images/baskets.png}" alt="baskets" /></a>
+                <p>Thesis project is called "E. Commerce recommendation system based on graph database" and it was written during last year of my study. Applied knowledge and skills that I gathered while learning about computer science. Click on image or title to see page describing project or click large button below to view project code.</p>
+                <ul class="actions special">
+                    <li><a href="/projectecommerce" class="button large">More</a></li>
+                </ul>
+            </article>
+
+            <!-- Posts -->
+            <section class="posts">
+                <article>
+                    <header>
+                        <h2><a href="/projectimprovementapp">Android project "Improvement App"</a></h2>
+                    </header>
+                    <a href="/projectimprovementapp" class="image fit"><img th:src="@{/portfolio/images/improvementapp.jpg}" alt="Improvement App" /></a>
+                    <p>A simple Android application written in Java that uses SQLite database</p>
+                    <ul class="actions special">
+                        <li><a href="/projectimprovementapp" class="button">More</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <header>
+                        <h2><a href="/API's">AI API</a></h2>
+                    </header>
+                    <a href="/API's" class="image fit"><img th:src="@{/portfolio/images/alien.png}" alt="AI API" /></a>
+                    <p>API test page</p>
+                    <ul class="actions special">
+                        <li><a href="/API's" class="button">More</a></li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section>
+                    <h3>Email</h3>
+                    <p>lu.lukosevicius@gmail.com</p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/lukas-luko%C5%A1evi%C4%8Dius/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/SecondLukyys/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script th:src="@{/portfolio/assets/js/jquery.min.js}"></script>
+    <script th:src="@{/portfolio/assets/js/jquery.scrollex.min.js}"></script>
+    <script th:src="@{/portfolio/assets/js/jquery.scrolly.min.js}"></script>
+    <script th:src="@{/portfolio/assets/js/browser.min.js}"></script>
+    <script th:src="@{/portfolio/assets/js/breakpoints.min.js}"></script>
+    <script th:src="@{/portfolio/assets/js/util.js}"></script>
+    <script th:src="@{/portfolio/assets/js/main.js}"></script>
+
+</body>
+</html>

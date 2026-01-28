@@ -33,7 +33,7 @@ public class WebPageController extends UserController{
         List<Product> products = getProductRepository().findAll();
 
         model.addAttribute("products", products);
-        return "newhomepage.html";
+        return "index"; //newhomepage.html
     }
 
     @GetMapping("/register")
@@ -75,5 +75,24 @@ public class WebPageController extends UserController{
         model.addAttribute("user", new User());
         return "registerwrong";
     }
+
+    @GetMapping("/projectecommerce")
+    public String eCommercepPage() {
+
+        return "projectecommerce";
+    }
+
+    @GetMapping("/projectimprovementapp")
+    public String projectImprovementAppPage() {
+
+        return "projectimprovementapp"; //newhomepage.html
+    } 
+
+    @GetMapping("/aps's")
+    public String projectAPIsPage() {
+
+        return "api's"; //newhomepage.html
+    }
+
 
 }

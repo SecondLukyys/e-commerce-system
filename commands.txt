@@ -20,6 +20,14 @@ Neo4j logins:
 Login: neo4j
 Pass: drama-happy-decide-scale-explain-6639
 
+To start neo4j service run:
+sudo systemctl start neo4j
+
+To remote access Neo4j interface use:
+
+ssh -L 7687:localhost:7687 root@46.202.189.28
+ssh -L 7474:localhost:7474 root@46.202.189.28
+
 ------------------------------------------------------------------------
 
 When not working on VPS to test Springboot app application.properties needs to be changed

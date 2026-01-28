@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Improvement App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" th:href="@{/portfolio/assets/css/main.css}" />
+    <link rel="shortcut icon" th:href="@{/portfolio/images/icon.ico}" />
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a th:href="@{/}" class="logo">My Portfolio</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a th:href="@{/}">Portfolio</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Post -->
+        <section class="post">
+            <header class="major">
+                <span class="date">Spring, 2023</span>
+                <h1>Improvement App</h1>
+                <p>This application is a simple Android application that takes user input and saves it to a database that is in a phone. It makes some calculations about data that user has saved. Main idea of this app was to create healthy habits by tracking user data. User should gain points by following healthy habits. Database in use is SQLite, app written in Java.</p>
+            </header>
+            <div class="image main"><img th:src="@{/portfolio/images/improvement_app.png}" alt="Improvement App" /></div>
+            <ul class="actions special">
+                <li><a th:href="@{https://github.com/SecondLukyys/ImprovementApp/tree/master}" class="button large">Check code</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section class="split contact">
+            <section>
+                <h3>Email</h3>
+                <p><a href="mailto:lu.lukosevicius@gmail.com">lu.lukosevicius@gmail.com</a></p>
+            </section>
+            <section>
+                <h3>Social</h3>
+                <ul class="icons alt">
+                    <li><a href="https://www.linkedin.com/in/lukas-luko%C5%A1evi%C4%8Dius/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/SecondLukyys/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </section>
+        </section>
+    </footer>
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script th:src="@{/portfolio/assets/js/jquery.min.js}"></script>
+<script th:src="@{/portfolio/assets/js/jquery.scrollex.min.js}"></script>
+<script th:src="@{/portfolio/assets/js/jquery.scrolly.min.js}"></script>
+<script th:src="@{/portfolio/assets/js/browser.min.js}"></script>
+<script th:src="@{/portfolio/assets/js/breakpoints.min.js}"></script>
+<script th:src="@{/portfolio/assets/js/util.js}"></script>
+<script th:src="@{/portfolio/assets/js/main.js}"></script>
+
+</body>
+</html>
