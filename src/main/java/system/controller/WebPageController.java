@@ -85,13 +85,13 @@ public class WebPageController extends UserController{
     @GetMapping("/projectimprovementapp")
     public String projectImprovementAppPage() {
 
-        return "projectimprovementapp"; //newhomepage.html
+        return "projectimprovementapp"; 
     } 
 
-    @GetMapping("/aps's")
-    public String projectAPIsPage() {
+    @GetMapping("/projectaiapi")
+    public String projectAIApiPage() {
 
-        return "api's"; //newhomepage.html
+        return "projectaiapi"; 
     }
 
 

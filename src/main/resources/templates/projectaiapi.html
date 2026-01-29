@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Applied APIs</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" th:href="@{/portfolio/assets/css/main.css}" />
+    <link rel="shortcut icon" th:href="@{/portfolio/images/icon.ico}" />
+</head>
+
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <a th:href="@{/}" class="logo">My Portfolio</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a th:href="@{/}">Portfolio</a></li>
+            <li><a th:href="@{/}">Portfolio 2</a></li>
+        </ul>
+        <ul class="icons">
+            <li>
+                <a href="https://www.linkedin.com/in/lukas-luko%C5%A1evi%C4%8Dius/"
+                   class="icon brands fa-linkedin">
+                    <span class="label">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/SecondLukyys/"
+                   class="icon brands fa-github">
+                    <span class="label">GitHub</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Post -->
+        <section class="post">
+            <header class="major">
+                <span class="date">Autumn, 2024</span>
+                <h1>API Application</h1>
+                <p>
+                    The purpose of this solution is to demonstrate how different AI models
+                    can be used via APIs.
+                </p>
+            </header>
+
+            <div class="image main">
+                <img th:src="@{/portfolio/images/ComfyUI_temp_sbazg_00008_.png}" alt="AI preview" />
+            </div>
+
+            <p>
+                For this static site, JavaScript is used to interact with a Large Language Model.
+                The model greets you with an introduction:
+            </p>
+
+            <br>
+            <div id="outputField0" style="white-space: pre-wrap; word-wrap: break-word;"></div>
+            <br>
+
+            <input
+                type="text"
+                id="promptInput"
+                placeholder="Enter your prompt"
+                maxlength="50"
+                required
+            />
+
+            <br><br>
+
+            <a class="button large" id="runPromptButton">Run prompt</a>
+
+            <br><br>
+
+            <div id="outputField" style="white-space: pre-wrap; word-wrap: break-word;"></div>
+
+            <br><br><br>
+
+            <ul class="actions special">
+                <li>
+                    <a th:href="@{/jscode}" class="button large">JavaScript code</a>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section class="split contact">
+            <section>
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:lu.lukosevicius@gmail.com">
+                        lu.lukosevicius@gmail.com
+                    </a>
+                </p>
+            </section>
+            <section>
+                <h3>Social</h3>
+                <ul class="icons alt">
+                    <li>
+                        <a href="https://www.linkedin.com/in/lukas-luko%C5%A1evi%C4%8Dius/"
+                           class="icon brands alt fa-linkedin">
+                            <span class="label">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SecondLukyys/"
+                           class="icon brands alt fa-github">
+                            <span class="label">GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </footer>
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <ul>
+            <li>&copy; Untitled</li>
+            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Import map -->
+<script type="importmap">
+{
+  "imports": {
+    "@google/generative-ai": "https://esm.run/@google/generative-ai"
+  }
+}
+</script>
+
+<!-- AI logic -->
+<script type="module">
+    import { GoogleGenerativeAI } from "@google/generative-ai";
+
+    const API_KEY = "YOUR_API_KEY_HERE";
+
+    const genAI = new GoogleGenerativeAI(API_KEY);
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+    const result0 = await model.generateContent("Write a little bit about yourself");
+    document.getElementById("outputField0").innerHTML = result0.response.text();
+
+    document.getElementById("runPromptButton").addEventListener("click", async () => {
+        const prompt = document.getElementById("promptInput").value;
+        const result = await model.generateContent(prompt);
+        document.getElementById("outputField").innerHTML = result.response.text();
+    });
+</script>
+
+<!-- Scripts -->
+<script th:src="@{/portfolio/assets/js/jquery.min.js}"></script>
+<script th:src="@{/portfolio/assets/js/jquery.scrollex.min.js}"></script>
+<script th:src="@{/portfolio/assets/js/jquery.scrolly.min.js}"></script>
+<script th:src="@{/portfolio/assets/js/browser.min.js}"></script>
+<script th:src="@{/portfolio/assets/js/breakpoints.min.js}"></script>
+<script th:src="@{/portfolio/assets/js/util.js}"></script>
+<script th:src="@{/portfolio/assets/js/main.js}"></script>
+
+</body>
+</html>
