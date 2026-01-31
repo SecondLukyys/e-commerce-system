@@ -2,7 +2,7 @@
 
 To start neo4j and springboot app in vps run:
 
-nohup neo4j console &
+nohup neo4j console &  arba  sudo systemctl start neo4j
 nohup mvn spring-boot:run > /dev/null 2>&1 &         mvn spring-boot:run  
 
 To stop neo4j and springboot app in vps run:
@@ -29,6 +29,12 @@ ssh -L 7687:localhost:7687 root@46.202.189.28
 ssh -L 7474:localhost:7474 root@46.202.189.28
 
 ------------------------------------------------------------------------
+
+vps root password is ****1*A****1*A
+
+------------------------------------------------------------------------
+
+OLD ↓
 
 When not working on VPS to test Springboot app application.properties needs to be changed
 
