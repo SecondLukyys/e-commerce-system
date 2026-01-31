@@ -1,4 +1,4 @@
-To enable HTTPS solution with nginx was used.
+To enable HTTPS website solution with nginx was used.
 
 Internet (HTTPS 443)
         ↓
