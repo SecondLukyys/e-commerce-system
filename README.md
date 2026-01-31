@@ -11,27 +11,27 @@ Spring Boot (HTTP 8080)
 To enable it such commands were used:
 
 Step 0 (prerequisites)
-lsb_release -a
-nginx -v
+command lsb_release -a
+command nginx -v
 
 Step 1 (Must be true)
-ping lukasportfoliosite.com 
+command ping lukasportfoliosite.com 
 should return ip address (46.202.189.28)
 
 Step 2 (install nginx)
-sudo apt update
-sudo apt install nginx -y
-sudo systemctl enable nginx
-sudo systemctl start nginx
-curl http://localhost
+command sudo apt update
+command sudo apt install nginx -y
+command sudo systemctl enable nginx
+command sudo systemctl start nginx
+command curl http://localhost
 
 Step 3 (Open firewall for web traffic)
-sudo ufw allow 'Nginx Full'
-sudo ufw reload
+command sudo ufw allow 'Nginx Full'
+command sudo ufw reload
 
 Step 4 (Create Nginx config for your domain)
-sudo nano /etc/nginx/sites-available/lukasportfoliosite.com
-Paste exact this content:
+command sudo nano /etc/nginx/sites-available/lukasportfoliosite.com
+command Paste exact this content:
 
         server {
         
@@ -50,21 +50,21 @@ Paste exact this content:
         }
 
 Step 5 (Enable the site)
-sudo ln -s /etc/nginx/sites-available/lukasportfoliosite.com /etc/nginx/sites-enabled/
-sudo nginx -t
-sudo systemctl reload nginx
+command sudo ln -s /etc/nginx/sites-available/lukasportfoliosite.com /etc/nginx/sites-enabled/
+command sudo nginx -t
+command sudo systemctl reload nginx
 
 Step 6 (Test HTTP via domain IMPORTANT)
 If it works then proceed
 
 Step 7 (Install Let’s Encrypt (Certbot))
-sudo apt install certbot python3-certbot-nginx -y
+command sudo apt install certbot python3-certbot-nginx -y
 
 Step 8 (Enable HTTPS automatic Nginx SSL)
-sudo certbot --nginx -d lukasportfoliosite.com -d www.lukasportfoliosite.com
+command sudo certbot --nginx -d lukasportfoliosite.com -d www.lukasportfoliosite.com
 
 Steo 9 (Final test)
-open www.lukasportfoliosite.com in web browser.
+command open www.lukasportfoliosite.com in web browser.
 
 
 
