@@ -67,7 +67,9 @@ Steo 9 (Final test)
 command open www.lukasportfoliosite.com in web browser.
 
 
-
+To start springboot and neo4j and to leave them working when terminal was close these commands were used:
+command nohup neo4j console & or command sudo systemctl start neo4j
+command nohup mvn spring-boot:run > /dev/null 2>&1 &
 
 
 
