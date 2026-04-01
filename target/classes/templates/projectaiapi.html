@@ -145,22 +145,33 @@
 </script>
 
 <!-- AI logic -->
-<script type="module">
-    import { GoogleGenerativeAI } from "@google/generative-ai";
+<script>
+document.addEventListener("DOMContentLoaded", () => {
 
-    const API_KEY = "YOUR_API_KEY_HERE";
+    const outputField0 = document.getElementById("outputField0");
+    const outputField = document.getElementById("outputField");
 
-    const genAI = new GoogleGenerativeAI(API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    // Initial AI greeting
+    fetch("/projectaiapi", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt: "Introduce yourself briefly" })
+    })
+    .then(res => res.text())
+    .then(data => outputField0.innerText = data);
 
-    const result0 = await model.generateContent("Write a little bit about yourself");
-    document.getElementById("outputField0").innerHTML = result0.response.text();
-
-    document.getElementById("runPromptButton").addEventListener("click", async () => {
+    // Button click for custom prompt
+    document.getElementById("runPromptButton").addEventListener("click", () => {
         const prompt = document.getElementById("promptInput").value;
-        const result = await model.generateContent(prompt);
-        document.getElementById("outputField").innerHTML = result.response.text();
+        fetch("/projectaiapi", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ prompt: prompt })
+        })
+        .then(res => res.text())
+        .then(data => outputField.innerText = data);
     });
+});
 </script>
 
 <!-- Scripts -->
