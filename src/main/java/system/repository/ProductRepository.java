@@ -10,7 +10,7 @@ import java.util.List;
 public interface ProductRepository extends Neo4jRepository<Product, Long> {
 
 
-    List<Product> findByPrice(int price);
+    List<Product> findByPrice(double price);
     List<Product> findByName(String name);
     List<Product> findByCategory(String category);
     List<Product> findByPricestring(String pricestring);

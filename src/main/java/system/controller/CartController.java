@@ -33,7 +33,7 @@ public class CartController {
     public String cartAnon(Model model) {
 
         List<Product> products = Variables.getProductscartanon();
-        int sumproducts=0;
+        double sumproducts=0;
 
 
         for(Product obj: products){
@@ -50,7 +50,7 @@ public class CartController {
     public String cartLogged(Model model) {
 
         List<Product> products = Variables.getProductscart();
-        int sumproducts=0;
+        double sumproducts=0;
 
 
         for(Product obj: products){
@@ -217,7 +217,7 @@ public class CartController {
 
         Cart cart = new Cart();
 
-        int sum = 0;
+        double sum = 0;
 
         for(Product obj: Variables.getProductscart()){
             sum = sum + obj.getPrice();
@@ -269,7 +269,7 @@ public class CartController {
 
         }
 
-        int sumproducts=0;
+        double sumproducts=0;
 
 
         for(Product obj: products){
@@ -299,7 +299,7 @@ public class CartController {
 
         }
 
-        int sumproducts=0;
+        double sumproducts=0;
 
         for(Product obj: products){
             sumproducts = sumproducts + obj.getPrice();

@@ -19,7 +19,7 @@ public class Cart {
     private String name;
     private LocalDateTime creationdate;
 
-    private int productsum = 0;
+    private double productsum = 0;
 
     @Relationship(type = "IN_CART")
     private List<Product> products = new ArrayList<>();
@@ -43,11 +43,11 @@ public class Cart {
         this.products = products;
     }
 
-    public int getProductsum() {
+    public double getProductsum() {
         return productsum;
     }
 
-    public void setProductsum(int productsum) {
+    public void setProductsum(double productsum) {
         this.productsum = productsum;
     }
 

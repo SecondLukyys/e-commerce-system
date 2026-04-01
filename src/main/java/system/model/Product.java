@@ -14,7 +14,7 @@ public class Product {
     private String pricestring;
     private String name;
     private String category;
-    private int price;
+    private double price;
     private String description;
     private String imagenamestring;
     private int sellcount;
@@ -102,11 +102,11 @@ public class Product {
     }
 
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
