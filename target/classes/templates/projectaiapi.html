@@ -49,8 +49,7 @@
                 <span class="date">Autumn, 2024</span>
                 <h1>API Application</h1>
                 <p>
-                    The purpose of this solution is to demonstrate how different AI models
-                    can be used via APIs.
+                    The purpose of this solution is to demonstrate how Large Language Models can work for free by using API.
                 </p>
             </header>
 
@@ -59,7 +58,7 @@
             </div>
 
             <p>
-                For this static site, JavaScript is used to interact with a Large Language Model.
+                For this API integration, JavaScript was used to interact with a Large Language Model. Qwen: Qwen3.6 Plus (free) model was used. Since this is a free model, you will need to wait a few seconds before it provides an answer.
                 The model greets you with an introduction:
             </p>
 
@@ -71,7 +70,7 @@
                 type="text"
                 id="promptInput"
                 placeholder="Enter your prompt"
-                maxlength="50"
+                maxlength="500"
                 required
             />
 
@@ -135,14 +134,6 @@
 
 </div>
 
-<!-- Import map -->
-<script type="importmap">
-{
-  "imports": {
-    "@google/generative-ai": "https://esm.run/@google/generative-ai"
-  }
-}
-</script>
 
 <!-- AI logic -->
 <script>

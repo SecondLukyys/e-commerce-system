@@ -5,8 +5,9 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
-
 import org.springframework.web.client.HttpClientErrorException;
+
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -14,41 +15,49 @@ import java.util.Map;
 @CrossOrigin
 public class AIController {
 
-    private final String API_KEY = "API KEY"; // <-- paste your key here
+    private final String API_KEY = "KEY_HERE";
 
+    @PostMapping
+    public String askAI(@RequestBody Map<String, String> body) {
 
-@PostMapping
-public String askAI(@RequestBody Map<String, String> body) {
-    String prompt = body.get("prompt");
-    String url = "https://api.openai.com/v1/chat/completions";
+        String prompt = body.get("prompt");
 
-    Map<String, Object> request = Map.of(
-            "model", "gpt-3.5-turbo",
-            "messages", new Object[]{ Map.of("role", "user", "content", prompt) }
-    );
+        String url = "https://openrouter.ai/api/v1/chat/completions";
 
-    HttpHeaders headers = new HttpHeaders();
-    headers.setContentType(MediaType.APPLICATION_JSON);
-    headers.setBearerAuth(API_KEY);
+        RestTemplate restTemplate = new RestTemplate();
 
-    HttpEntity<Map<String, Object>> entity = new HttpEntity<>(request, headers);
-    RestTemplate restTemplate = new RestTemplate();
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + API_KEY);
+        headers.set("HTTP-Referer", "http://localhost:8080");
+        headers.set("X-Title", "My Portfolio App");
+        headers.setContentType(MediaType.APPLICATION_JSON);
 
-    try {
-        Map response = restTemplate.postForObject(url, entity, Map.class);
-        var choices = (java.util.List) response.get("choices");
-        Map firstChoice = (Map) choices.get(0);
-        Map message = (Map) firstChoice.get("message");
-        return (String) message.get("content");
-    } catch (HttpClientErrorException e) {
-        if (e.getStatusCode().value() == 429) {
-            return "API quota exceeded. Please check your OpenAI account or billing plan.";
+        Map<String, Object> request = Map.of(
+                "model", "qwen/qwen3.6-plus:free",
+                "messages", new Object[]{
+                        Map.of("role", "system", "content", "You are a helpful assistant."),
+                        Map.of("role", "user", "content", prompt)
+                },
+                "max_tokens", 150,
+                "temperature", 0.7
+        );
+
+        HttpEntity<Map<String, Object>> entity = new HttpEntity<>(request, headers);
+
+        try {
+            Map response = restTemplate.postForObject(url, entity, Map.class);
+
+            List choices = (List) response.get("choices");
+            Map firstChoice = (Map) choices.get(0);
+            Map message = (Map) firstChoice.get("message");
+
+            return (String) message.get("content");
+
+        } catch (HttpClientErrorException e) {
+            return "API error: " + e.getResponseBodyAsString();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "Error processing response";
         }
-        e.printStackTrace();
-        return "Error calling OpenAI API";
-    } catch (Exception e) {
-        e.printStackTrace();
-        return "Error parsing ChatGPT response";
     }
-}
 }
