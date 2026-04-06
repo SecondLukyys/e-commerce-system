@@ -15,7 +15,7 @@ import java.util.Map;
 @CrossOrigin
 public class AIController {
 
-    private final String API_KEY = "KEY_HERE";
+    private final String API_KEY = "api key";
 
     @PostMapping
     public String askAI(@RequestBody Map<String, String> body) {
