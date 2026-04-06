@@ -100,5 +100,11 @@ public class WebPageController extends UserController{
         return "projectflappybird"; 
     }
 
+    @GetMapping("/powerBIInteracticvePortfolio")
+    public String powerBIInteractivePortfolioPage() {
+
+        return "powerBIInteracticvePortfolio"; 
+    }
+
 
 }
