@@ -94,5 +94,11 @@ public class WebPageController extends UserController{
         return "projectaiapi"; 
     }
 
+    @GetMapping("/projectflappybird")
+    public String projectFlappyBirdPage() {
+
+        return "projectflappybird"; 
+    }
+
 
 }
